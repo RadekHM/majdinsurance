@@ -20,13 +20,13 @@ const FinalCTASection = () => {
           </div>
 
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            {t('جاهز للبدء؟', 'Ready to Get Started?')}
+            {t('جاهز تبدأ؟', 'Ready to get started?')}
           </h2>
 
           <p className="text-xl md:text-2xl mb-10 text-white/90">
             {t(
-              'احصل على عرض تأمين مخصص لسيارتك في دبي اليوم',
-              'Get a personalized insurance quote for your car in Dubai today'
+              'أرسل لنا تفاصيل سيارتك الآن، ودع فريق مجد للتأمين يبحث لك عن أفضل خيار في السوق.',
+              'Send us your car details today and let Majd Insurance find the best offer in the market for you.'
             )}
           </p>
 
@@ -44,9 +44,10 @@ const FinalCTASection = () => {
               variant="gold"
               size="lg"
               className="text-lg px-8 py-6"
+              onClick={handleWhatsApp}
             >
               <FileText className="h-5 w-5" />
-              {t('املأ نموذج العرض', 'Fill Quote Form')}
+              {t('اطلب اتصال هاتفي', 'Request a call')}
             </Button>
           </div>
 

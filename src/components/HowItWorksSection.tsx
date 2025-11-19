@@ -9,37 +9,37 @@ const HowItWorksSection = () => {
     {
       icon: MessageCircle,
       step: '1',
-      title: { ar: 'تواصل معنا', en: 'Contact Us' },
+      title: { ar: 'أرسل لنا معلومات سيارتك', en: 'Share your car details' },
       description: {
-        ar: 'أرسل لنا رسالة عبر الواتساب أو املأ نموذج العرض.',
-        en: 'Send us a WhatsApp message or fill out the quote form.',
+        ar: 'موديل السيارة، سنة الصنع، رقم اللوحة، ونوع الاستخدام.',
+        en: 'Model, year, plate number, and usage type.',
       },
     },
     {
       icon: FileText,
       step: '2',
-      title: { ar: 'شارك التفاصيل', en: 'Share Details' },
+      title: { ar: 'نبحث لك عن أفضل العروض', en: 'We search the market for you' },
       description: {
-        ar: 'قدم معلومات سيارتك وبياناتك الشخصية.',
-        en: 'Provide your car information and personal details.',
+        ar: 'نقارن بين شركات التأمين ونختار الأنسب لك.',
+        en: 'We compare offers from insurance companies on your behalf.',
       },
     },
     {
       icon: CheckCircle,
       step: '3',
-      title: { ar: 'احصل على عرض', en: 'Get Quote' },
+      title: { ar: 'نرسل لك العرض النهائي بوضوح', en: 'You receive a clear quote' },
       description: {
-        ar: 'احصل على عروض مخصصة من شركات التأمين الرائدة.',
-        en: 'Receive personalized quotes from leading insurers.',
+        ar: 'تغطيات، سعر، وطريقة الدفع – كل شيء مكتوب وواضح.',
+        en: 'Coverage, price, and payment options – all explained.',
       },
     },
     {
       icon: Shield,
       step: '4',
-      title: { ar: 'أنت محمي', en: 'You are Protected' },
+      title: { ar: 'توافق؟ نُكمِل الإجراءات إلكترونيًا', en: 'Confirm & complete online' },
       description: {
-        ar: 'اختر أفضل عرض وسنقوم بتفعيل التأمين فورًا.',
-        en: 'Choose the best offer and we will activate your insurance instantly.',
+        ar: 'بدون زيارات مكتبية أو أوراق معقّدة.',
+        en: 'No office visits or complicated paperwork.',
       },
     },
   ];
@@ -49,7 +49,7 @@ const HowItWorksSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            {t('كيف يعمل', 'How It Works')}
+            {t('كيف تبدأ؟', 'How It Works')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             {t(

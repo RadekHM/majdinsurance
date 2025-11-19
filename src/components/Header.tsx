@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Languages, MessageCircle } from 'lucide-react';
-import majdLogo from '@/assets/majd-logo.png';
+import majdLogo from '@/assets/majd-logo-transparent.png';
 
 const Header = () => {
   const { t, toggleLanguage, language } = useLanguage();

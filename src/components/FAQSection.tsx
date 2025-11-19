@@ -12,42 +12,42 @@ const FAQSection = () => {
   const faqs = [
     {
       question: {
-        ar: 'ما هي المستندات المطلوبة للحصول على عرض؟',
-        en: 'What documents do I need for a quote?',
+        ar: 'هل أستطيع الحصول على عرض بدون زيارة مكتب؟',
+        en: 'Can I get a quote without visiting an office?',
       },
       answer: {
-        ar: 'تحتاج إلى: رخصة القيادة، بطاقة الهوية الإماراتية أو جواز السفر، ورخصة السيارة (المُلكية). يمكنك إرسالها عبر الواتساب بكل سهولة.',
-        en: 'You need: driving license, Emirates ID or passport, and vehicle registration (Mulkiya). You can easily send them via WhatsApp.',
+        ar: 'نعم، كل العملية تتم أونلاين وعبر الواتساب أو الهاتف.',
+        en: 'Yes, the entire process can be done online via WhatsApp or phone.',
       },
     },
     {
       question: {
-        ar: 'كم من الوقت يستغرق الحصول على عرض؟',
+        ar: 'هل التأمين يشمل البطارية في السيارات الكهربائية؟',
+        en: 'Is the battery covered for EVs?',
+      },
+      answer: {
+        ar: 'هذا يعتمد على الباقة المختارة. نوضح لك تفاصيل التغطية قبل الموافقة.',
+        en: 'It depends on the chosen plan. We explain all coverage details before you agree.',
+      },
+    },
+    {
+      question: {
+        ar: 'هل أستطيع الدفع بالتقسيط؟',
+        en: 'Can I pay in instalments?',
+      },
+      answer: {
+        ar: 'نعم، بعض شركات التأمين توفر خيارات دفع عبر البنوك. نوضح لك كل الخيارات المتاحة.',
+        en: 'Yes, some insurance companies offer bank instalment plans. We show you all available options.',
+      },
+    },
+    {
+      question: {
+        ar: 'كم يستغرق الحصول على عرض؟',
         en: 'How long does it take to get a quote?',
       },
       answer: {
-        ar: 'عادةً ما نقدم عروض الأسعار خلال 5-10 دقائق من استلام المستندات. نعمل بسرعة لتوفير وقتك!',
-        en: "We typically provide quotes within 5-10 minutes of receiving your documents. We work fast to save your time!",
-      },
-    },
-    {
-      question: {
-        ar: 'هل يشمل التأمين السيارات الكهربائية والصينية؟',
-        en: 'Does the insurance cover electric and Chinese cars?',
-      },
-      answer: {
-        ar: 'نعم! لدينا خطط تأمين خاصة للسيارات الكهربائية مثل تسلا والسيارات الصينية مثل BYD وMG وجيلي مع خصومات حصرية تصل إلى 20٪.',
-        en: 'Yes! We have special insurance plans for electric cars like Tesla and Chinese cars like BYD, MG, and Geely with exclusive discounts up to 20%.',
-      },
-    },
-    {
-      question: {
-        ar: 'هل يمكنني تغيير خطة التأمين الخاصة بي لاحقًا؟',
-        en: 'Can I change my insurance plan later?',
-      },
-      answer: {
-        ar: 'نعم، يمكنك ترقية أو تغيير خطة التأمين الخاصة بك في أي وقت. تواصل معنا عبر الواتساب وسنساعدك في إجراء التغييرات.',
-        en: "Yes, you can upgrade or change your insurance plan anytime. Contact us on WhatsApp and we'll help you make the changes.",
+        ar: 'غالبًا ما نرسل لك عرضًا مبدئيًا خلال وقت قصير بعد استلام بيانات سيارتك.',
+        en: 'In most cases, we send an initial quote shortly after receiving your car details.',
       },
     },
   ];

@@ -37,8 +37,8 @@ const HeroSection = () => {
 
           <p className="text-xl md:text-2xl text-white/90 mb-8">
             {t(
-              'خصومات حصرية على تأمين تسلا والسيارات الصينية. احصل على عرض مخصص خلال دقائق.',
-              'Exclusive discounts on Tesla & Chinese car insurance. Get a personalized quote in minutes.'
+              'مجد للتأمين يساعدك في الحصول على أفضل عروض التأمين لسيارتك في دبي، مع خصومات خاصة لسيارات تسلا والسيارات الصينية. خلال دقائق تحصل على عرض واضح بدون تعقيدات.',
+              'Majd Insurance helps you find the best car insurance offers in Dubai, with special discounts for Tesla and Chinese cars. Get a clear quote in minutes with no hidden surprises.'
             )}
           </p>
 

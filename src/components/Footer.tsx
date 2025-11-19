@@ -1,5 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import majdLogo from '@/assets/majd-logo.png';
+import majdLogo from '@/assets/majd-logo-transparent.png';
 import { MessageCircle, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
@@ -30,8 +30,8 @@ const Footer = () => {
             </div>
             <p className="text-muted-foreground text-sm">
               {t(
-                'تأمين سيارات سريع وشفاف في دبي مع عروض خاصة على السيارات الكهربائية والصينية.',
-                'Fast and transparent car insurance in Dubai with special offers on electric and Chinese cars.'
+                'وسيط تأمين في دبي – تأمين سيارات سريع وواضح مع عروض خاصة على تسلا والسيارات الصينية.',
+                'Insurance intermediary in Dubai – Fast and clear car insurance with special offers on Tesla and Chinese cars.'
               )}
             </p>
           </div>
@@ -98,8 +98,8 @@ const Footer = () => {
           </p>
           <p className="text-xs text-muted-foreground mt-2">
             {t(
-              'التأمين خاضع للشروط والأحكام. يرجى قراءة وثيقة التأمين بعناية.',
-              'Insurance subject to terms and conditions. Please read policy document carefully.'
+              'مجد للتأمين – وسيط تأمين في دبي. قد تختلف التغطيات والأسعار حسب شركة التأمين المختارة وشروطها.',
+              'Majd Insurance – insurance intermediary in Dubai. Coverage and pricing may vary depending on the selected insurance company and its terms.'
             )}
           </p>
         </div>

@@ -9,26 +9,24 @@ const SpecialOffersSection = () => {
   const offers = [
     {
       icon: Zap,
-      title: { ar: 'تأمين تسلا', en: 'Tesla Insurance' },
+      title: { ar: 'باقات خاصة لملاك تسلا', en: 'Exclusive Tesla Packages' },
       discount: '20%',
       features: [
-        { ar: 'تغطية شاملة للبطارية', en: 'Comprehensive battery coverage' },
-        { ar: 'صيانة مجانية لمدة سنة', en: 'Free maintenance for 1 year' },
-        { ar: 'قطع غيار أصلية', en: 'Genuine parts replacement' },
-        { ar: 'مساعدة على الطريق 24/7', en: '24/7 roadside assistance' },
+        { ar: 'تغطية شاملة مع خصم حتى 20٪', en: 'Up to 20% discount on comprehensive cover' },
+        { ar: 'تغطية الأعطال المتعلقة بالنظام الكهربائي (حسب الشروط)', en: 'Coverage for electric system issues (terms apply)' },
+        { ar: 'إجراءات سريعة في حالة الحوادث', en: 'Fast claim handling for accidents' },
       ],
       gradient: 'from-primary to-primary/80',
     },
     {
       icon: Car,
-      title: { ar: 'السيارات الصينية', en: 'Chinese Cars' },
-      discount: '15%',
-      subtitle: { ar: 'BYD، MG، جيلي، والمزيد', en: 'BYD, MG, Geely & More' },
+      title: { ar: 'مزايا إضافية لسيارات BYD وMG وGeely وغيرها', en: 'Extra Value for BYD, MG, Geely & more' },
+      discount: '',
+      subtitle: { ar: '', en: '' },
       features: [
-        { ar: 'أسعار خاصة للسيارات الصينية', en: 'Special rates for Chinese brands' },
-        { ar: 'تغطية شاملة', en: 'Comprehensive coverage' },
-        { ar: 'معالجة سريعة للمطالبات', en: 'Fast claim processing' },
-        { ar: 'خدمة باللغة العربية', en: 'Arabic language support' },
+        { ar: 'أسعار تنافسية مقارنة بالشركات الأخرى', en: 'Very competitive pricing' },
+        { ar: 'خيارات متعددة للدفع (دفعة واحدة أو أقساط عبر البنك)', en: 'Flexible payment options (lump sum or bank instalments)' },
+        { ar: 'إمكانية توسعة التغطية حسب احتياجك', en: 'Optional add-ons depending on your needs' },
       ],
       gradient: 'from-gold/90 to-gold',
     },
@@ -39,14 +37,20 @@ const SpecialOffersSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            {t('عروض خاصة', 'Special Offers')}
+            {t('عروض خاصة لسيارات تسلا والسيارات الصينية', 'Special Offers for Tesla & Chinese Cars')}
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-6">
             {t(
-              'خصومات حصرية على تأمين السيارات الكهربائية والصينية',
-              'Exclusive discounts on electric and Chinese car insurance'
+              'إذا كنت تملك تسلا أو سيارة صينية كهربائية أو هجينة، فأنت في المكان الصحيح. نوفر لك باقات تأمين مصممة خصيصًا لهذه الفئة من السيارات، مع:',
+              'Own a Tesla or a Chinese EV/hybrid? You\'re in the right place. We provide insurance packages specially tailored for these cars with:'
             )}
           </p>
+          <ul className="text-muted-foreground max-w-2xl mx-auto text-start list-disc list-inside space-y-2">
+            <li>{t('خصومات على التأمين الشامل', 'Discounts on comprehensive insurance')}</li>
+            <li>{t('تغطية للبطارية والمحرك الكهربائي (حسب الباقة)', 'Coverage for battery and EV components (depending on the plan)')}</li>
+            <li>{t('مساعدة على الطريق 24/7 داخل الإمارات', '24/7 roadside assistance across the UAE')}</li>
+            <li>{t('دعم كامل باللغة العربية والإنجليزية', 'Full support in Arabic and English')}</li>
+          </ul>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -60,15 +64,17 @@ const SpecialOffersSection = () => {
                   <div className="bg-white/20 backdrop-blur-sm p-3 rounded-lg">
                     <offer.icon className="h-8 w-8" />
                   </div>
-                  <div className="text-end">
-                    <p className="text-4xl font-bold">{offer.discount}</p>
-                    <p className="text-sm">{t('خصم', 'OFF')}</p>
-                  </div>
+                  {offer.discount && (
+                    <div className="text-end">
+                      <p className="text-4xl font-bold">{offer.discount}</p>
+                      <p className="text-sm">{t('خصم', 'OFF')}</p>
+                    </div>
+                  )}
                 </div>
-                <h3 className="text-2xl font-bold mb-2">
+                <h3 className="text-xl font-bold mb-2">
                   {t(offer.title.ar, offer.title.en)}
                 </h3>
-                {offer.subtitle && (
+                {offer.subtitle && offer.subtitle.ar && (
                   <p className="text-white/90 text-sm">
                     {t(offer.subtitle.ar, offer.subtitle.en)}
                   </p>

@@ -8,34 +8,34 @@ const WhyMajdSection = () => {
   const benefits = [
     {
       icon: DollarSign,
-      title: { ar: 'أسعار شفافة', en: 'Transparent Pricing' },
+      title: { ar: 'أسعار واضحة بدون مفاجآت', en: 'Transparent pricing' },
       description: {
-        ar: 'لا رسوم خفية. احصل على أفضل الأسعار مع تغطية شاملة.',
-        en: 'No hidden fees. Get the best rates with comprehensive coverage.',
+        ar: 'لا رسوم مخفية، كل شيء موضح من البداية.',
+        en: 'No hidden fees – everything is clear from the start.',
       },
     },
     {
       icon: MessageCircle,
-      title: { ar: 'خدمة واتساب سريعة', en: 'Fast WhatsApp Service' },
+      title: { ar: 'خدمة سريعة عبر الواتساب', en: 'Fast support on WhatsApp' },
       description: {
-        ar: 'تواصل معنا مباشرة عبر الواتساب واحصل على رد فوري.',
-        en: 'Connect with us directly on WhatsApp and get instant responses.',
+        ar: 'أرسل لنا تفاصيل سيارتك، ونرجع لك بعرض خلال وقت قصير.',
+        en: 'Send us your car details and get a quote quickly.',
       },
     },
     {
       icon: MapPin,
-      title: { ar: 'خبرة دبي', en: 'Dubai Expertise' },
+      title: { ar: 'خبرة في سوق دبي', en: 'Local Dubai expertise' },
       description: {
-        ar: 'نفهم سوق دبي ونقدم حلول تأمين محلية مخصصة.',
-        en: 'We understand Dubai market and offer tailored local insurance solutions.',
+        ar: 'نعرف متطلبات التأمين والقوانين المحلية، ونساعدك تختار الأنسب لك.',
+        en: 'We understand the insurance market and regulations in Dubai.',
       },
     },
     {
       icon: Languages,
-      title: { ar: 'دعم ثنائي اللغة', en: 'Bilingual Support' },
+      title: { ar: 'دعم ثنائي اللغة', en: 'Bilingual support' },
       description: {
-        ar: 'فريقنا يتحدث العربية والإنجليزية بطلاقة.',
-        en: 'Our team speaks both Arabic and English fluently.',
+        ar: 'فريق يتحدث العربية والإنجليزية لخدمتك في كل خطوة.',
+        en: 'Our team serves you in both Arabic and English.',
       },
     },
   ];

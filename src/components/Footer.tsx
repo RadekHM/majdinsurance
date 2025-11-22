@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Logo & About */}
           <div>
-            <img src={majdLogo} alt="Majd Insurance" className="h-20 w-auto mb-4" />
+            <img src={majdLogo} alt="Majd Insurance" className="h-40 w-auto mb-4" />
             <p className="text-muted-foreground text-sm">
               {t(
                 'وسيط تأمين في دبي – تأمين سيارات سريع وواضح مع عروض خاصة على تسلا والسيارات الصينية.',

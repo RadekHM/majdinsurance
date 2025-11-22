@@ -55,11 +55,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://wa.me/971XXXXXXXXX"
+                  href="https://wa.me/971503814993"
                   className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
                 >
                   <MessageCircle className="h-4 w-4" />
-                  <span>+971 XX XXX XXXX</span>
+                  <span>+971 50 381 4993</span>
                 </a>
               </li>
               <li>

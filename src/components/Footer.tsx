@@ -57,6 +57,7 @@ const Footer = () => {
                 <a
                   href="https://wa.me/971503814993"
                   className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
+                  dir="ltr"
                 >
                   <MessageCircle className="h-4 w-4" />
                   <span>+971 50 381 4993</span>
@@ -66,6 +67,7 @@ const Footer = () => {
                 <a
                   href="mailto:info@majdinsurance.ae"
                   className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
+                  dir="ltr"
                 >
                   <Mail className="h-4 w-4" />
                   <span>info@majdinsurance.ae</span>

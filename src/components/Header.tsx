@@ -28,15 +28,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center gap-3">
-            <img src={majdLogo} alt="Majd Insurance" className="h-12 w-auto" />
-            <div>
-              <h1 className="text-xl font-bold text-foreground">
-                {t('مجد للتأمين', 'Majd Insurance')}
-              </h1>
-              <p className="text-xs text-muted-foreground">{t('دبي', 'Dubai')}</p>
-            </div>
-          </div>
+          <img src={majdLogo} alt="Majd Insurance" className="h-14 w-auto" />
 
           {/* Desktop Menu */}
           <nav className="hidden lg:flex items-center gap-6">

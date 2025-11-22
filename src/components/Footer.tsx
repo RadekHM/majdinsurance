@@ -19,15 +19,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Logo & About */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <img src={majdLogo} alt="Majd Insurance" className="h-12 w-auto" />
-              <div>
-                <h3 className="text-lg font-bold text-foreground">
-                  {t('مجد للتأمين', 'Majd Insurance')}
-                </h3>
-                <p className="text-xs text-muted-foreground">{t('دبي', 'Dubai')}</p>
-              </div>
-            </div>
+            <img src={majdLogo} alt="Majd Insurance" className="h-14 w-auto mb-4" />
             <p className="text-muted-foreground text-sm">
               {t(
                 'وسيط تأمين في دبي – تأمين سيارات سريع وواضح مع عروض خاصة على تسلا والسيارات الصينية.',

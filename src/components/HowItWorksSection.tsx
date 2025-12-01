@@ -45,13 +45,13 @@ const HowItWorksSection = () => {
   ];
 
   return (
-    <section id="how" className="py-20 bg-background">
+    <section id="how" className="py-12 md:py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">
             {t('كيف تبدأ؟', 'How It Works')}
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm md:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
             {t(
               'احصل على تأمين سيارتك في 4 خطوات بسيطة',
               'Get your car insurance in 4 simple steps'
@@ -59,26 +59,26 @@ const HowItWorksSection = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">
           {steps.map((step, index) => (
             <div key={index} className="relative">
               {index < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-16 ltr:left-full rtl:right-full w-full h-0.5 bg-gradient-to-r from-primary/50 to-transparent -z-10" />
               )}
               <Card className="border-2 hover:border-primary hover:shadow-lg transition-all duration-300 h-full">
-                <CardContent className="p-6 text-center">
-                  <div className="relative inline-block mb-4">
-                    <div className="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center">
-                      <step.icon className="h-8 w-8" />
+                <CardContent className="p-5 md:p-6 text-center">
+                  <div className="relative inline-block mb-3 md:mb-4">
+                    <div className="bg-primary text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center">
+                      <step.icon className="h-7 w-7 md:h-8 md:w-8" />
                     </div>
-                    <div className="absolute -top-2 -end-2 bg-gold text-gold-foreground w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">
+                    <div className="absolute -top-2 -end-2 bg-gold text-gold-foreground w-7 h-7 md:w-8 md:h-8 rounded-full flex items-center justify-center text-xs md:text-sm font-bold">
                       {step.step}
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold text-foreground mb-3">
+                  <h3 className="text-lg md:text-xl font-bold text-foreground mb-2 md:mb-3">
                     {t(step.title.ar, step.title.en)}
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-sm md:text-base text-muted-foreground">
                     {t(step.description.ar, step.description.en)}
                   </p>
                 </CardContent>

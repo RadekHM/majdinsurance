@@ -25,10 +25,10 @@ const Header = () => {
 
   return (
     <header className="bg-card border-b border-border sticky top-0 z-50 shadow-sm">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+      <div className="container mx-auto px-3 md:px-4">
+        <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <img src={majdLogo} alt="Majd Insurance" className="h-40 w-auto" />
+          <img src={majdLogo} alt="Majd Insurance" className="h-16 md:h-24 w-auto" />
 
           {/* Desktop Menu */}
           <nav className="hidden lg:flex items-center gap-6">

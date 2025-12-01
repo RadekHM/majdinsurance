@@ -41,13 +41,13 @@ const WhyMajdSection = () => {
   ];
 
   return (
-    <section id="why" className="py-20 bg-secondary/30">
+    <section id="why" className="py-12 md:py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">
             {t('لماذا تختار مجد؟', 'Why Choose Majd?')}
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm md:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
             {t(
               'نحن نجعل التأمين على السيارات بسيطًا وسريعًا وموثوقًا',
               'We make car insurance simple, fast, and reliable'
@@ -55,20 +55,20 @@ const WhyMajdSection = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
           {benefits.map((benefit, index) => (
             <Card
               key={index}
               className="border-2 hover:border-primary hover:shadow-lg transition-all duration-300 group"
             >
-              <CardContent className="p-6 text-center">
-                <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                  <benefit.icon className="h-8 w-8 text-primary" />
+              <CardContent className="p-4 md:p-6 text-center">
+                <div className="bg-primary/10 w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:bg-primary/20 transition-colors">
+                  <benefit.icon className="h-7 w-7 md:h-8 md:w-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">
+                <h3 className="text-lg md:text-xl font-bold text-foreground mb-2 md:mb-3">
                   {t(benefit.title.ar, benefit.title.en)}
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-sm md:text-base text-muted-foreground">
                   {t(benefit.description.ar, benefit.description.en)}
                 </p>
               </CardContent>

@@ -33,19 +33,19 @@ const SpecialOffersSection = () => {
   ];
 
   return (
-    <section id="offers" className="py-20 bg-background">
+    <section id="offers" className="py-12 md:py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">
             {t('عروض خاصة لسيارات تسلا والسيارات الصينية', 'Special Offers for Tesla & Chinese Cars')}
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-6">
+          <p className="text-sm md:text-lg text-muted-foreground max-w-3xl mx-auto mb-4 md:mb-6 px-2">
             {t(
               'إذا كنت تملك تسلا أو سيارة صينية كهربائية أو هجينة، فأنت في المكان الصحيح. نوفر لك باقات تأمين مصممة خصيصًا لهذه الفئة من السيارات، مع:',
               'Own a Tesla or a Chinese EV/hybrid? You\'re in the right place. We provide insurance packages specially tailored for these cars with:'
             )}
           </p>
-          <ul className="text-muted-foreground max-w-2xl mx-auto text-start list-disc list-inside space-y-2">
+          <ul className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto text-start list-disc list-inside space-y-1.5 md:space-y-2 px-4">
             <li>{t('خصومات على التأمين الشامل', 'Discounts on comprehensive insurance')}</li>
             <li>{t('تغطية للبطارية والمحرك الكهربائي (حسب الباقة)', 'Coverage for battery and EV components (depending on the plan)')}</li>
             <li>{t('مساعدة على الطريق 24/7 داخل الإمارات', '24/7 roadside assistance across the UAE')}</li>

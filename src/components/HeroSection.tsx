@@ -20,33 +20,33 @@ const HeroSection = () => {
         backgroundPosition: 'center',
       }}
     >
-      <div className="container mx-auto px-4 py-20 relative z-10">
+      <div className="container mx-auto px-4 py-12 md:py-20 relative z-10">
         <div className="max-w-3xl">
-          <div className="inline-block mb-6 px-4 py-2 bg-gold/20 border-2 border-gold rounded-full">
-            <p className="text-gold font-semibold text-sm md:text-base">
+          <div className="inline-block mb-4 md:mb-6 px-3 md:px-4 py-2 bg-gold/20 border-2 border-gold rounded-full">
+            <p className="text-gold font-semibold text-xs md:text-base">
               {t('🎉 عروض خاصة على التأمين الكهربائي', '🎉 Special EV Insurance Offers')}
             </p>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight">
             {t(
               'تأمين سيارتك في دبي… أسرع، أوضح، وبأفضل سعر',
               'Fast & Clear Car Insurance in Dubai'
             )}
           </h1>
 
-          <p className="text-xl md:text-2xl text-white/90 mb-8">
+          <p className="text-base md:text-xl lg:text-2xl text-white/90 mb-6 md:mb-8">
             {t(
               'مجد للتأمين يساعدك في الحصول على أفضل عروض التأمين لسيارتك في دبي، مع خصومات خاصة لسيارات تسلا والسيارات الصينية. خلال دقائق تحصل على عرض واضح بدون تعقيدات.',
               'Majd Insurance helps you find the best car insurance offers in Dubai, with special discounts for Tesla and Chinese cars. Get a clear quote in minutes with no hidden surprises.'
             )}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
             <Button
               variant="gold"
               size="lg"
-              className="text-lg px-8 py-6"
+              className="text-base md:text-lg px-6 md:px-8 py-5 md:py-6 h-auto"
               onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               {t('احصل على عرض الآن', 'Get a Quote')}
@@ -55,7 +55,7 @@ const HeroSection = () => {
             <Button
               variant="whatsapp"
               size="lg"
-              className="text-lg px-8 py-6"
+              className="text-base md:text-lg px-6 md:px-8 py-5 md:py-6 h-auto"
               onClick={handleWhatsApp}
             >
               <MessageCircle className="h-5 w-5" />
@@ -63,18 +63,18 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          <div className="mt-12 grid grid-cols-3 gap-8 pt-8 border-t border-white/20">
-            <div>
-              <p className="text-3xl md:text-4xl font-bold text-gold mb-2">20%</p>
-              <p className="text-white/80 text-sm">{t('خصم على السيارات الكهربائية', 'Off EV Insurance')}</p>
+          <div className="mt-8 md:mt-12 grid grid-cols-3 gap-3 md:gap-8 pt-6 md:pt-8 border-t border-white/20">
+            <div className="text-center md:text-start">
+              <p className="text-2xl md:text-4xl font-bold text-gold mb-1 md:mb-2">20%</p>
+              <p className="text-white/80 text-xs md:text-sm">{t('خصم على السيارات الكهربائية', 'Off EV Insurance')}</p>
             </div>
-            <div>
-              <p className="text-3xl md:text-4xl font-bold text-gold mb-2">24/7</p>
-              <p className="text-white/80 text-sm">{t('دعم عبر الواتساب', 'WhatsApp Support')}</p>
+            <div className="text-center md:text-start">
+              <p className="text-2xl md:text-4xl font-bold text-gold mb-1 md:mb-2">24/7</p>
+              <p className="text-white/80 text-xs md:text-sm">{t('دعم عبر الواتساب', 'WhatsApp Support')}</p>
             </div>
-            <div>
-              <p className="text-3xl md:text-4xl font-bold text-gold mb-2">5 {t('دقائق', 'min')}</p>
-              <p className="text-white/80 text-sm">{t('احصل على عرضك', 'Get Your Quote')}</p>
+            <div className="text-center md:text-start">
+              <p className="text-2xl md:text-4xl font-bold text-gold mb-1 md:mb-2">5 {t('دقائق', 'min')}</p>
+              <p className="text-white/80 text-xs md:text-sm">{t('احصل على عرضك', 'Get Your Quote')}</p>
             </div>
           </div>
         </div>

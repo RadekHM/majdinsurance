@@ -14,12 +14,12 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-card border-t border-border py-12">
+    <footer className="bg-card border-t border-border py-8 md:py-12">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-8">
           {/* Logo & About */}
           <div>
-            <img src={majdLogo} alt="Majd Insurance" className="h-40 w-auto mb-4" />
+            <img src={majdLogo} alt="Majd Insurance" className="h-24 md:h-32 w-auto mb-3 md:mb-4" />
             <p className="text-muted-foreground text-sm">
               {t(
                 'وسيط تأمين في دبي – تأمين سيارات سريع وواضح مع عروض خاصة على تسلا والسيارات الصينية.',

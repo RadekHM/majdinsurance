@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://majdinsurance.ae/sitemap.xml
+Sitemap: https://majdinsurance.com/sitemap.xml
